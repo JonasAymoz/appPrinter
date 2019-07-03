@@ -23,7 +23,7 @@ function processHistory(history){
 
 
 function printText(text){
-    dir = shell.exec('sudo echo -e "'+text+'" > /dev/serial0', function(code, stdout, stderr) {
+    dir = shell.exec('python printer.py "'+text+'" ', function(code, stdout, stderr) {
         if (code) {
           // should have err.code here?  
         }
