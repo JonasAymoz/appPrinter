@@ -11,20 +11,21 @@ def print_text(text):
 def initTicket():
 
 	p.justify("C")
-	p.print_text("-----//-----")
+	p.print_text("---------//----------")
 	p.linefeed()
 	p.inverse()
 	p.print_text("WEB SESSION\n")
 	p.inverse(False)
-	p.print_text("-----//----- \n\n")
+	p.print_text("----------//---------- \n\n")
 	p.justify()
 
 def footerTicket():	
 
-	p.print_text("-----//-----")
+	p.print_text("----------------------")
 	p.font_b()
-	p.print_text(" \n Send this to google @1600 Amphitheatre Parkway Mountain View, CA 94043, USA")
+	p.print_text(" \n Send this to google \n@1600 Amphitheatre Parkway Mountain View,\n CA 94043, USA")
 	p.font_b(False)
+	p.print_text("\n----------<3---------- \n\n\n")
 
 if __name__ == '__main__':
 	initTicket()
