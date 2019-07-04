@@ -1,28 +1,29 @@
-
 import os, time, sys, json
 sys.path.append('~/projets/printer')
 from printer import ThermalPrinter
 
-
-# Variables
-photoPath = "/home/pi/Images/camera/"
-photoName = time.strftime("%Y%m%d%H%M%S") + "_photobooth.jpg"
-photoResize = 512, 384
-photoTitle = "Jonas's Photo Booth!"
-
-
 def print_text(text):
 	p = ThermalPrinter(serialport=ThermalPrinter.SERIALPORT)
-	p.justify("C")
-	p.font_b()
-	p.print_text("Super TEXT \n")
-	p.font_b(False)
 	p.print_text(text)
-	p.linefeed()
+
+def initTicket():
+	p = ThermalPrinter(serialport=ThermalPrinter.SERIALPORT)
 	p.justify("C")
+	p.print_text("-----//-----")
+	p.linefeed()
+	p.inverse()
+	p.print_text("WEB SESSION\n")
+	p.inverse(False)
+	p.print_text("-----//----- \n\n")
+	p.justify()
+
+def footerTicket():	
+	p = ThermalPrinter(serialport=ThermalPrinter.SERIALPORT)
+	p.print_text("-----//-----")
+	p.font_b()
+	p.print_text(" \n Send this to google @1600 Amphitheatre Parkway Mountain View, CA 94043, USA")
+	p.font_b(False)
 
 if __name__ == '__main__':
 	data=sys.argv[1]
-	#photo_callback()
-	#print_from_imgpath(photoName + "thumbnail.jpg")
 	print_text(data)

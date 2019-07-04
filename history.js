@@ -1,39 +1,27 @@
 var shell = require('shelljs');
+var printer = require('./printer');
 
 function processHistory(history){
     //get everysite put qtty
-    console.log("yo");
-    var sites = {} ;
+    console.log("Into process History");
+    var sites = [] ;
     if(history){
         history.forEach(element => {
             let domain = extractHostname(element.url);
             if (!sites.hasOwnProperty(domain)){
                 sites[domain] = element;
-                //console.log(domain +"\n");
+                console.log(domain +"\n");
             } else {
-                sites[domain].visitCount =+1;
+                sites[domain].visitCount = sites[domain].visitCount+1;
             }
         });
-        for (element in sites) {
-            console.log(element +' '+ sites[element].visitCount);
-        };
-    }
-    
+        console.log('Sites in history : ' + JSON.stringify(sites));
+        return sites;
+    } 
 }
 
 
-function printText(text){
-    dir = shell.exec('python printer.py "'+text+'" ', function(code, stdout, stderr) {
-        if (code) {
-          // should have err.code here?  
-        }
-        console.log('Exit code:', code);
-        console.log('Program output:', stdout);
-        console.log('Program stderr:', stderr);
-    });
-}
-
-
+// UTILS
 function extractHostname(url) {
     var hostname;
     //find & remove protocol (http, ftp, etc.) and get hostname
@@ -53,4 +41,4 @@ function extractHostname(url) {
     return hostname;
 }
 
-module.exports = {processHistory, printText};
+module.exports = {processHistory};

@@ -1,0 +1,79 @@
+[
+    {
+        "id": 298,
+        "sessionId": "mbc2gfw3cke",
+        "url": "https://fi.wikipedia.org/wiki/Mestarien_liiga",
+        "domain": "fi.wikipedia.org",
+        "title": "",
+        "visitTime": 1562169916815.068,
+        "visitCount": 1,
+        "referrerUrl": "",
+        "referrerChrome": "0"
+    },
+    {
+        "id": 297,
+        "sessionId": "mbc2gfw3cke",
+        "url": "https://fr.wikipedia.org/wiki/Fichier:Beginning_Arsenal_Sevilla.jpg#filelinks",
+        "domain": "fr.wikipedia.org",
+        "title": "Fichier:Beginning Arsenal Sevilla.jpg — Wikipédia",
+        "visitTime": 1562169914671.252,
+        "visitCount": 1,
+        "referrerUrl": "",
+        "referrerChrome": "867"
+    },
+    {
+        "id": 296,
+        "sessionId": "mbc2gfw3cke",
+        "url": "https://fr.wikipedia.org/wiki/Fichier:Beginning_Arsenal_Sevilla.jpg",
+        "domain": "fr.wikipedia.org",
+        "title": "",
+        "visitTime": 1562169912736.87,
+        "visitCount": 1,
+        "referrerUrl": "",
+        "referrerChrome": "867"
+    },
+    {
+        "id": 295,
+        "sessionId": "mbc2gfw3cke",
+        "url": "https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Fichiers_non_cat%C3%A9goris%C3%A9s",
+        "domain": "fr.wikipedia.org",
+        "title": "",
+        "visitTime": 1562169909737.764,
+        "visitCount": 1,
+        "referrerUrl": "",
+        "referrerChrome": "866"
+    },
+    {
+        "id": 294,
+        "sessionId": "mbc2gfw3cke",
+        "url": "https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Pages_sp%C3%A9ciales",
+        "domain": "fr.wikipedia.org",
+        "title": "",
+        "visitTime": 1562169908407.615,
+        "visitCount": 1,
+        "referrerUrl": "",
+        "referrerChrome": "865"
+    },
+    {
+        "id": 292,
+        "sessionId": "mbc2gfw3cke",
+        "url": "https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&utm_medium=sidebar&utm_campaign=C13_fr.wikipedia.org&uselang=fr",
+        "domain": "donate.wikimedia.org",
+        "title": "",
+        "visitTime": 1562169904212.771,
+        "visitCount": 1,
+        "referrerUrl": "",
+        "referrerChrome": "0"
+    },
+    {
+        "id": 293,
+        "sessionId": "mbc2gfw3cke",
+        "url": "https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=FR&uselang=fr&utm_medium=sidebar&utm_source=donate&utm_campaign=C13_fr.wikipedia.org",
+        "domain": "donate.wikimedia.org",
+        "title": "",
+        "visitTime": 1562169904212.771,
+        "visitCount": 1,
+        "referrerUrl": "",
+        "referrerChrome": "863"
+    }
+]
