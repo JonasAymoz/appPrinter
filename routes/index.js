@@ -11,12 +11,12 @@ router.get('/', function(req, res, next) {
 router.post('/history', (req, res) => {
   console.log(history.processHistory);
   // get the json decode and print
-  console.log('received req.body : ' + JSON.stringify(req.body));
   let textToPrint = req.body.history;
-  console.log('received history : ' + JSON.stringify(textToPrint));
+  //console.log('('----- Received history : ' + JSON.stringify(textToPrint)+ '\n');
   var sites = history.processHistory(textToPrint);
-  console.log('sites in router : ' + JSON.stringify(sites));
+  console.log('----- Sites in router : ' + JSON.stringify(sites + '\n'));
   printer.printTicket(sites);
+  
   res.sendStatus(200); 
   return;
 });

@@ -4,7 +4,7 @@ var printer = require('./printer');
 function processHistory(history){
     //get everysite put qtty
     console.log("Into process History");
-    var sites = [] ;
+    var sites = {} ;
     if(history){
         history.forEach(element => {
             let domain = extractHostname(element.url);
@@ -15,7 +15,7 @@ function processHistory(history){
                 sites[domain].visitCount = sites[domain].visitCount+1;
             }
         });
-        console.log('Sites in history : ' + JSON.stringify(sites));
+        console.log('Sites in processhistory : ' + JSON.stringify(sites));
         return sites;
     } 
 }
@@ -42,3 +42,5 @@ function extractHostname(url) {
 }
 
 module.exports = {processHistory};
+
+

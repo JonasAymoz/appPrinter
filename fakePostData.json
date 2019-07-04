@@ -1,0 +1,26 @@
+{
+    "www.google.com": {
+        "id": 37,
+        "chromeId": 522,
+        "sessionId": "wi4yi8fxoae",
+        "url": "https://www.google.com/search?q=ru&rlz=1C5CHFA_enFR851FR851&oq=ru&aqs=chrome..69i57j0l5.336j0j4&sourceid=chrome&ie=UTF-8",
+        "domain": "www.google.com",
+        "title": "",
+        "visitTime": 1562258985115.563,
+        "visitCount": 1,
+        "referrerUrl": "",
+        "referrerChrome": "0"
+    },
+    "www.lemonde.fr": {
+        "id": 36,
+        "chromeId": 34,
+        "sessionId": "wi4yi8fxoae",
+        "url": "https://www.lemonde.fr/",
+        "domain": "www.lemonde.fr",
+        "title": "Le Monde.fr - Actualités et Infos en France et dans le monde",
+        "visitTime": 1562258982647.2412,
+        "visitCount": 26,
+        "referrerUrl": "",
+        "referrerChrome": "53"
+    }
+}

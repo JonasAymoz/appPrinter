@@ -2,7 +2,7 @@ var shell = require('shelljs');
 
 
 function printText(text){
-    dir = shell.exec('python booth.py "'+text+'" ', function(code, stdout, stderr) {
+    dir = shell.exec("python booth.py '"+text+"' ", function(code, stdout, stderr) {
         if (code) {
             console.log('Program output:', stdout);
             console.log('Program stderr:', stderr);
@@ -28,15 +28,18 @@ function footerTicket(){
     });
 }
 
-
+// arg Data is array of siteName + nbvisits
 function printTicket(data){
-    initTicket();
-    for (const [url, object] of Object.entries(data)) {
-        printText(url + '  *' + object.visitCount + '\n');
+    //initTicket();
+    /* for (const [url, object] of Object.entries(data)) {
+        // todo calc lenght of string
+        printText(url + '---- *' + object.visitCount + '\n');
         console.log(url, object.visitCount);
-    }
-    printText('\n');
-    footerTicket();
+    } */
+    //
+    console.log('--Sending to printer :' + JSON.stringify(data) + '\n');
+    printText(JSON.stringify(data));
+    //footerTicket();
 }
 
 module.exports = {printTicket, printText};
