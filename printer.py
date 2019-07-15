@@ -57,7 +57,7 @@ class ThermalPrinter(object):
     # tweak this if your images appear too black or too white
     black_threshold = 48
     # pixels with less alpha than this are counted as white
-    alpha_threshold = 127
+    alpha_threshold = 100
 
     printer = None
 
